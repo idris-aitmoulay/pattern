@@ -52,3 +52,10 @@ class Iterator<T> {
     });
   }
 }
+const array = [1, 2, 3, 5];
+const iteratorsArry = new Iterator(array);
+
+while (iteratorsArry.hasNext()) {
+  const item = iteratorsArry.next();
+  console.log(item);
+}
