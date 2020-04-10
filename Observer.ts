@@ -16,7 +16,6 @@ Subject.prototype = {
   }
 };
 
-const subject = new Subject()
 
 function Observer1() {
   console.log('observer1')
@@ -25,6 +24,9 @@ function Observer1() {
 function Observer2() {
   console.log('observer2')
 }
+
+const subject = new Subject();
+
 
 subject.subscribe(Observer1);
 subject.subscribe(Observer2);
